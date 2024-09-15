@@ -1,0 +1,54 @@
+confusion martix
+True Positives (TP): 27,673 (Correctly classified positive reviews).
+
+True Negatives (TN): 606 (Correctly classified negative reviews).
+
+False Positives (FP): 614 (Negative reviews misclassified as positive).
+
+False Negatives (FN): 140 (Positive reviews misclassified as negative).
+
+
+valuation Metrics
+
+The model was evaluated using several metrics:
+
+
+Accuracy: Measures the proportion of correctly classified reviews.
+
+Accuracy: 97.40%
+
+Precision: Measures the proportion of positive predictions that were actually positive.
+
+Precision: 97.83%
+
+Recall: Measures the proportion of actual positives that were correctly identified.
+
+Recall: 99.50%
+
+F1-score: The harmonic mean of precision and recall, providing a balanced view of the model's performance.
+
+F1-score: 98.66%
+
+
+Key Observations
+
+The model performed exceptionally well in identifying positive reviews, with a very high recall (99.5%) for positive reviews. 
+This means that almost all positive reviews were correctly classified.
+
+The precision (97.83%) was also high, indicating that most of the reviews predicted as positive were indeed positive.
+
+There was a small number of false positives (614) and false negatives (140), but overall, the model's F1-score of 98.66% shows that it balances precision and recall very well.
+
+
+Challenges Faced
+While using NLTK to clean the text, an error occurred in downloading stopwords due to a network issue in the environment
+Finding correct dataset that corresponds to the given task
+https://www.kaggle.com/datasets/cynthiarempel/amazon-us-customer-reviews-dataset
+Handling Imbalanced Data: The dataset was highly skewed towards positive reviews.
+
+
+Conclusion
+
+The Logistic Regression model achieved a high level of accuracy, precision, recall, and F1-score. 
+It performed particularly well in identifying positive reviews.
+Despite the challenge with stopwords, the model demonstrated strong performance and can be further improved by addressing the challenges mentioned above.
